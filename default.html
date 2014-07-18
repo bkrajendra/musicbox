@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MusicBox</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="styles1.css" /> -->
+<link href="css/bootstrap.sh.min.css" rel="stylesheet">
+<style type="text/css">
+	body {
+
+  padding-top: 70px;
+}
+	html {
+	  position: relative;
+	  min-height: 100%;
+	}
+	body {
+	  /* Margin bottom by footer height */
+	  margin-bottom: 60px;
+	}
+
+	body > .container {
+	  padding: 60px 15px 0;
+	  border:#003366;
+	}
+	.container .text-muted {
+	  margin: 20px 0;
+	}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar {
+  -webkit-app-region: drag;
+}
+button {
+  -webkit-app-region: no-drag;
+}
+a{
+-webkit-app-region: no-drag;
+}
+
+</style>
+</head>
+<body>
+   <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-titlebar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="711-apng.png" width="30" height="30" alt="" />&nbsp;&nbsp;MusicBox</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about" data-toggle="modal" data-target="#myModal">About</a></li>
+            <li><a href="#contact" data-toggle="modal" data-target="#myModalc">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Content</a></li>
+                <li><a href="#">About ITA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+
+<div id="page"class="container">
+    <form id="searchForm" method="post" class="form-wrapper-01">
+		<fieldset>
+
+
+	<div class="input-group">
+      <input type="text" class="form-control" id="s">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit" value="Submit" id="submitButton">Search</button>
+      </span>
+    </div><!-- /input-group -->
+
+           	<!-- <input id="s" type="text" /> -->
+            
+            <!-- <input type="submit" value="Submit" id="submitButton" /> -->
+            
+            <div id="searchInContainer">
+                <!-- <input type="radio" name="check" value="site" id="searchSite" checked />
+                <label for="searchSite" id="siteNameLabel">Search</label>
+                
+                <input type="radio" name="check" value="web" id="searchWeb" />
+                <label for="searchWeb">Search The Web</label> -->
+			</div>
+                        <!-- 
+            <ul class="icons">
+                <li class="web" title="Web Search" data-searchType="web">Web</li>
+                <li class="images" title="Image Search" data-searchType="images">Images</li>
+                <li class="news" title="News Search" data-searchType="news">News</li>
+                <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+            </ul> -->
+            
+        </fieldset>
+		<div id="resultsDiv"></div>
+		
+    </form>
+
+   
+    
+</div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">&copy; IOCare 2014 </script></p>
+      </div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">About MusicBox</h4>
+      </div>
+      <div class="modal-body">
+        <h4>MusicBox v1.0.0</h4><br />
+		
+			Free Music search and download app.<br /><br />
+		<img src="711-apng.png" width="100" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModalc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Contact</h4>
+      </div>
+      <div class="modal-body">
+        Crafted by<br />
+		IOCare Designer and UI Architect.<br /><br />
+		<img src="711-apng.png" width="96" height="96" alt="" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
